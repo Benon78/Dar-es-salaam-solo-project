@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.hero-section{
+    display: flex;
+   
+    align-items: end;
+    justify-content: space-between;
+    width: 100%;
+    height: 60vh;
+    color: #fff;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Images/Dar_es_salaam_Skyline_from_the_sea.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    padding: 0  30px 30px 30px;
+    transition: background-image 1s;
+}
+.hero-section:hover{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Images/back\ hover.jpg");
+}
+
+.hero-section h1{
+    font-weight: 700;
+    text-shadow: 0 0 4px black;
+    font-size: 50px;
+   margin: auto;
+}
+
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: end;
+
+}
+
+
+.hero-container p{
+    font-size: 12px;
+}
+
+.container-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 12px;
+    margin-right: 50px;
+
+}
+
+
+
+.container-row .port{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    margin-right: 20px;
+    
+}
+
+.container-row .flag{
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+}
+
+.container-row span {
+    border-bottom: 2px solid  #fff;
+}
+
+.discription{
+    width: 90%;
+    margin: 20px auto;
+    background: linear-gradient(rgba(0,0,0,0.5),#009688);
+    color: #fff;
+    font-weight: 500;
+    padding: 20px;
+    text-shadow: 0 0 4px black;
+}
+
+
+.main-container{
+    width: 100%;
+    /* margin: 20px ; */
+    text-align: center;
+
+}
+
+.main-container h1{
+    color: #555;
+   border-bottom: 2px solid #5555;
+   background: #efefef;
+}
+
+.flex-container{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px auto;
+}
+
+.single-activity{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+}
+
+.single-activity img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5),#009688);
+    opacity: 0;
+    transition: 1s;
+}
+
+.single-activity:hover .overlay{
+    opacity: 1;
+}
+
+.single-disc{
+    width: 80%;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s ;
+}
+
+hr{
+    background: #fff;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+
+.single-disc p{
+    font-size: 12px;
+}
+
+.single-activity:hover .single-disc{
+    bottom: 10%;
+    opacity: 1;
+}
+
+
+.footer{
+    text-align: center;
+    width: 100%;
+    background: #009688;
+}
+
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    font-size: 25px;
+    margin-right: 15px;
+    color: #0511fa;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #abababab;
+    display: inline-block;
+    transition: transform 1s;
+
+}
+
+.social-icons a:hover{
+    color: #0511fa;
+    transform: translateY(-8px);
+}
+
+
+
+
+
+
